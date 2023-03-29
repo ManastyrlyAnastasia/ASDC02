@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Arrays;
-//сортировка по 1 столбцу
+
 public class BubbleSort {
     public static void main(String[] args) {
         String fileName = "C:/Users/ACER/Desktop/настя/2 курс/ASDC/primer1/Competitors.csv";
@@ -12,7 +12,7 @@ public class BubbleSort {
         printData(data);
     }
 
-    // Чтение данных из файла в двумерный массив
+ 
     public static String[][] readDataFromFile(String fileName) {
         String[][] data = new String[0][0];
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
@@ -28,7 +28,6 @@ public class BubbleSort {
         return data;
     }
 
-    // Сортировка пузырьком
     public static void bubbleSort(String[][] data, int keyIndex) {
         int n = data.length;
         int comparisons = 0;
