@@ -2,12 +2,12 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Arrays;
-
+//сортировка по 1 столбцу
 public class BubbleSort {
     public static void main(String[] args) {
         String fileName = "C:/Users/ACER/Desktop/настя/2 курс/ASDC/primer1/Competitors.csv";
         String[][] data = readDataFromFile(fileName);
-        int keyIndex = 5; // номер столбца с ключом
+        int keyIndex = 0; // номер столбца с ключом
         bubbleSort(data, keyIndex);
         printData(data);
     }
